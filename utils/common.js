@@ -1,5 +1,5 @@
 /**
- * Created by dell on 2015/4/16.
+ * Created by gao on 2015/4/16.
  */
 define(function (require, exports, module) {
     var $ = require("sys.jquery");
@@ -32,7 +32,7 @@ define(function (require, exports, module) {
         return o;
     };
 
-    //解析事件 add by Li at 2014-7-12
+    //解析事件 
     exports.parseEvent = function (ui, scope) {
         var context = {};
         context.ui = $(ui);
