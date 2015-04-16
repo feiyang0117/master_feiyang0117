@@ -12,7 +12,7 @@ function mask(id,txt){
 }
 mask("mask","ssd");
 
-
+/*开关控制*/
 function ifAgree(){
       var me = this;
       me.id = "#ifAgree";
