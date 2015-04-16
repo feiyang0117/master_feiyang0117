@@ -11,3 +11,33 @@ function mask(id,txt){
     },2000)
 }
 mask("mask","ssd");
+
+
+function ifAgree(){
+      var me = this;
+      me.id = "#ifAgree";
+      me.select = true;                           //开关控制
+      me.selectClass = "ui-right-select";         //选中
+      me.noneselectClass = "ui-right-noneselect"; //未选中
+  }
+
+  ifAgree.prototype.addselect = function(){
+      var self = this;
+      var selfSelect = $(self.id).addClass(self.selectClass).removeClass(self.noneselectClass);
+      return selfSelect
+  };
+
+  ifAgree.prototype.removeselect = function(){
+      var self = this;
+      var selfUnselect = $(self.id).addClass(self.noneselectClass).removeClass(self.selectClass);
+      return selfUnselect
+  };
+
+  
+  var agree = new ifAgree();
+  //添加点击事件,同意或者不同意自动还款
+  $(agree.id).on("click",function(){ 
+    console.log(agree)
+      agree.select == true ? agree.select = false : agree.select = true;
+      agree.select && agree.addselect() || agree.removeselect();
+  });
