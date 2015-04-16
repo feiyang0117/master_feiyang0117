@@ -35,7 +35,7 @@ function ifAgree(){
 
   
   var agree = new ifAgree();
-  //添加点击事件,同意或者不同意自动还款
+  //添加点击事件
   $(agree.id).on("click",function(){ 
     console.log(agree)
       agree.select == true ? agree.select = false : agree.select = true;
