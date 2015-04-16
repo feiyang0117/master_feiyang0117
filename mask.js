@@ -8,7 +8,7 @@ function mask(id,txt){
     typeof txt=="string"?(getId("#"+id).innerHTML=(txt)  ):(getId(id).innerHTML=txt);
     return setTimeout(function(){
         getId("#mask").style.display="none";
-    },2000)
+    },3000)
 }
 mask("mask","ssd");
 
