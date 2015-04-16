@@ -11,7 +11,6 @@ function mask(id,txt){
     },3000)
 }
 mask("mask","ssd");
-
 /*开关控制*/
 function ifAgree(){
       var me = this;
