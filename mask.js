@@ -1,5 +1,5 @@
 /**
- * Created by dell on 2014/12/10.
+ * Created by dell on 2015/4/10.
  */
 function getId(id){
     return typeof (id)=="string"?document.querySelector(id):document.getElementById(id);
